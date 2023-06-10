@@ -3,6 +3,11 @@ html{
     padding: 0;
     box-sizing: border-box;
     font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+}
+:root {
+    --cloudy : #e3f2fd;
+    --blue: rgb(27, 92, 206);
 }
 
 *, *::after, *::before {
@@ -72,4 +77,79 @@ html{
 .intro-tag i:hover {
     font-size: 22px;
     color: grey;
+}
+
+#mailto {
+    color: white;
+    text-decoration: none;
+}
+
+#mailto:hover {
+    text-decoration: underline;
+}
+
+.abt-h {
+    font-size: 35px;
+}
+
+.abt-p {
+    padding: 15px 0 20px;
+    line-height: 26px;
+    font-weight: 200;
+    letter-spacing: 1px;
+    font-size: medium;
+}
+
+.all-skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #212529;
+    color: white;
+    height: 270px;
+    width: 220px;
+    font-size: larger;
+    border-radius: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+}
+
+.all-skills:hover {
+    transition-duration: 1.5s;
+    box-shadow: none;
+}
+
+.html:hover {
+    background-color: #FF5733;
+    border: solid 2px black;
+    transition-duration: 1.5s;
+}
+.css:hover {
+    background-color: #2965f1;
+    border: solid 2px black;
+    transition-duration: 1.5s;
+    transition-timing-function: ease-out;
+}
+.Javascript:hover {
+    background-color: #f0db4f;
+    border: solid 2px black;
+    transition-duration: 1.5s;
+    color: #323330;
+}
+.bootstrap:hover {
+    background-color: #6f2cf3;
+    border: solid 2px black;
+    transition-duration: 1.5s;
+}
+
+.git:hover {
+    background-color: white;
+    color: #212529;
+    border: solid 2px black;
+}
+
+.skills-container {
+    min-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
