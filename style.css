@@ -1,0 +1,75 @@
+html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+*, *::after, *::before {
+    box-sizing: inherit;
+}
+
+.glass {
+    background: rgba(174, 174, 174, 0.173);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(10px);
+    border:1px solid rgba(255, 255, 255, 0.18);
+}
+
+.navbar-toggler {
+    border: none;
+    outline: none;
+    color: black;
+}
+
+.img-box {
+    border-radius: 46% 54% 26% 74% / 62% 67% 33% 38% ;
+    width: 300px;
+    height: 300px;
+}
+
+
+.intro-section {
+    height: 660px;
+    display: flex;
+    align-items: center;
+    /* background-image: url(images/background.svg);
+    background-size: cover;
+    background-position: center;
+    opacity: inherit; */
+    background-color: #4d4855;
+}
+
+.hero {
+    font-family: 'Roboto', sans-serif;
+    background-color: #4d4855;
+    background-image: linear-gradient(147deg, #706b78 0%, #000000 94%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent ;
+    letter-spacing: 2px;
+}
+
+
+.font {
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+.pro-font {
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 24px;
+    letter-spacing: 2px;
+}
+
+.intro-tag {
+    font-weight: 500;
+    font-size: 20px;
+    gap: 10px;
+    margin-left: 2px;
+}
+
+.intro-tag i:hover {
+    font-size: 22px;
+    color: grey;
+}
