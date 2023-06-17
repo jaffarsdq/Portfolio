@@ -3,12 +3,8 @@ html{
     padding: 0;
     box-sizing: border-box;
     font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    scroll-behavior: smooth;
 
-}
-:root {
-    --cloudy : #e3f2fd;
-    --blue: rgb(27, 92, 206);
-    --dark: #212529;
 }
 
 *, *::after, *::before {
@@ -19,7 +15,7 @@ html{
     background: rgba(174, 174, 174, 0.173);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(10px);
-    border:1px solid rgba(255, 255, 255, 0.18);
+    /* border:1px solid rgba(255, 255, 255, 0.18);*/
 }
 
 .navbar-toggler {
@@ -34,27 +30,65 @@ html{
     height: 300px;
 }
 
+.first-image, .second-image, .third-image, .fourth-image {
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.first-image {
+    height: 100vh;
+    background-image: url(https://img.freepik.com/free-photo/charcoal-pens-copyspace_23-2148017459.jpg?w=996&t=st=1687001814~exp=1687002414~hmac=c252354f1bd18d00d428515960412c4e3421bd54ebfd0845cbc16ecaf7f0bf98);
+    opacity: inherit; 
+}
+
+.second-image {
+    min-height: 100vh;
+    background-image: url(images/skills.jpg);
+    opacity: inherit; 
+}
 
 .intro-section {
-    height: 660px;
+    min-height: 100vh;
     display: flex;
     align-items: center;
-    /* background-image: url(images/background.svg);
-    background-size: cover;
-    background-position: center;
-    opacity: inherit; */
-    background-color: #4d4855;
+    /* background-color: #f5f5f7; */
+}
+
+.about-section {
+    background-color: black;
+}
+
+.skills-section {
+    /* background-color: white; */
+    /* color: #000000; */
+}
+
+.project-section {
+    background-color: black;
+    padding: 10px;
+    padding-bottom: 80px;
+}
+
+.bg-card {
+    background-color: #f5f5f7;
+    color: black;
+}
+
+.footer-section {
+    background-color: black;
+    color:  #f5f5f7;
+    padding: 25px;
 }
 
 .hero {
-    font-family: 'Roboto', sans-serif;
-    background-color: #4d4855;
-    background-image: linear-gradient(147deg, #706b78 0%, #000000 94%);
+    font-family: "SF Pro Text",'Roboto', sans-serif;
+    background-color: #000000;
+    background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);      
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent ;
     letter-spacing: 2px;
 }
-
 
 .font {
     font-size: 3.5rem;
@@ -111,47 +145,49 @@ html{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #212529;
-    color: white;
     height: 270px;
     width: 220px;
     font-size: larger;
-    border-radius: 2rem;
-    box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+    /* border-radius: 8px; */
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 20px 30px;
 }
 
 .all-skills:hover {
-    transition-duration: 1.5s;
+    transition-duration: 1s;
     box-shadow: none;
 }
 
-.html:hover {
+.html {
     background-color: #FF5733;
+    color: white;
     border: solid 2px black;
-    transition-duration: 1.5s;
+    border-radius: 89% 11% 92% 8% / 23% 83% 17% 77%;
 }
-.css:hover {
+.css {
     background-color: #2965f1;
+    color: white;
     border: solid 2px black;
-    transition-duration: 1.5s;
+    border-radius: 27% 73% 21% 79% / 82% 24% 76% 18% ;
     transition-timing-function: ease-out;
 }
-.Javascript:hover {
+.Javascript {
     background-color: #f0db4f;
     border: solid 2px black;
-    transition-duration: 1.5s;
+    border-radius: 89% 11% 92% 8% / 23% 83% 17% 77%;
     color: #323330;
 }
-.bootstrap:hover {
+.bootstrap {
     background-color: #6f2cf3;
+    color: white;
     border: solid 2px black;
-    transition-duration: 1.5s;
+    border-radius: 27% 73% 21% 79% / 82% 24% 76% 18% ;
 }
 
-.git:hover {
-    background-color: white;
-    color: #212529;
+.git {
+    background-color: #212529;
+    color: white;
     border: solid 2px black;
+    border-radius: 89% 11% 92% 8% / 23% 83% 17% 77%;
 }
 
 .skills-container {
@@ -191,3 +227,24 @@ html{
     line-height: 1.8rem;
     text-shadow: var(--dark) 1px 0 10px;
 }
+
+
+
+.social a i {
+    margin: 5px;
+}
+
+.social a i:hover {
+    color: #0080FF;
+    cursor: pointer;
+}
+
+.all-skills:hover {
+    cursor: pointer;
+}
+
+.resume-btn:hover {
+    cursor: not-allowed;
+}
+
+
