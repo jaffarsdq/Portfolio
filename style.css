@@ -153,7 +153,7 @@ html{
 }
 
 .all-skills:hover {
-    transition-duration: 1s;
+    transition-duration: 0.3s;
     box-shadow: none;
 }
 
@@ -236,15 +236,11 @@ html{
 
 .social a i:hover {
     color: #0080FF;
-    cursor: pointer;
 }
 
 .all-skills:hover {
     cursor: pointer;
 }
 
-.resume-btn:hover {
-    cursor: not-allowed;
-}
 
 
